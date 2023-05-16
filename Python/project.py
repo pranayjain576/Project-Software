@@ -6,10 +6,11 @@ while (i<20):
   n = random.randint(1, 20)  
   if(n not in list):
       list.append(n)
-      url="C:\\Users\\Pranay\\Desktop\\Python\\music\\" +str(n)+".mp3"
+      print("Sound no. "+ str(n)+ " is being played")
+      url="music\\" +str(n)+".mp3"
       playsound(url)
+
   else:
       continue
   i=i+1
 
-print(list)
